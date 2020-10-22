@@ -21,12 +21,23 @@
           GitHub
         </a>
       </div>
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.description }}</h2>
+      <nuxt-content :document="page" />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content, params, error }) {
+    const page = await $content('pages/landing').fetch()
+
+    return {
+      page,
+    }
+  },
+}
 </script>
 
 <style>
