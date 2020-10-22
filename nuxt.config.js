@@ -41,8 +41,12 @@ export default {
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
 
+  router: {
+    base: process.env.BASE_URL || '/',
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    publicPath: process.env.PUBLIC_PATH || '/',
+    publicPath: 'assets',
   },
 }

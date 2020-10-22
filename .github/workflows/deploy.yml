@@ -11,7 +11,7 @@ on:
       - master
 
 env:
-  PUBLIC_PATH: /nuxt-starter/
+  BASE_URL: /nuxt-starter/
 
 jobs:
   ci:
