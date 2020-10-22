@@ -10,6 +10,9 @@ on:
       - main
       - master
 
+env:
+  PUBLIC_PATH: /nuxt-starter/
+
 jobs:
   ci:
     runs-on: ${{ matrix.os }}
