@@ -2,6 +2,7 @@ backend:
   name: github
   repo: codegram/nuxt-starter
   branch: main
+  use_graphql: true
 
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
@@ -16,4 +17,5 @@ collections:
         fields:
           - {label: Title, name: title, widget: string, required: true}
           - {label: Description, name: description, widget: text, required: true}
+          - {label: Avatar, name: avatar, widget: image, required: true}
           - {label: Content, name: body, widget: markdown}
