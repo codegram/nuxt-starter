@@ -17,5 +17,5 @@ collections:
         fields:
           - {label: Title, name: title, widget: string, required: true}
           - {label: Description, name: description, widget: text, required: true}
-          - {label: Avatar, name: avatar, widget: image, required: true}
+          - {label: Logo, name: logo, widget: image, required: true}
           - {label: Content, name: body, widget: markdown}

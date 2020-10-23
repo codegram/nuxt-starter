@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <Logo :src="page.logo" />
       <h1 class="title">nuxt-starter</h1>
       <div class="links">
         <a
