@@ -32,7 +32,7 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.5.0",
-    "netlify-cms": "^2.10.64",
+    "netlify-cms": "^2.10.65",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
     "remark-footnotes": "^3.0.0",
