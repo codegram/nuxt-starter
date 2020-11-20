@@ -15,10 +15,16 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"octref.vetur",
-		"stylelint.vscode-stylelint"
+		"stylelint.vscode-stylelint",
+		"bradlc.vscode-tailwindcss",
+		"austenc.tailwind-docs",
+		"andrewmcodes.tailwindcss-extension-pack",
+		"sidharthachatterjee.vscode-tailwindcss",
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [
+		3000
+	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
