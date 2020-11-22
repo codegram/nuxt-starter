@@ -238,15 +238,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  async asyncData({ $content, params, error }) {
-    const page = await $content('pages/landing').fetch()
-
-    return {
-      page,
-    }
-  },
-}
-</script>
