@@ -29,7 +29,7 @@
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^7.4.1",
+    "eslint-plugin-vue": "^7.9.0",
     "jest": "^26.6.3",
     "netlify-cms": "^2.10.126",
     "nuxt-svg-loader": "^1.2.0",
