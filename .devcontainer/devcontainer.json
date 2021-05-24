@@ -15,11 +15,7 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"octref.vetur",
-		"stylelint.vscode-stylelint",
-		"bradlc.vscode-tailwindcss",
-		"austenc.tailwind-docs",
-		"andrewmcodes.tailwindcss-extension-pack",
-		"sidharthachatterjee.vscode-tailwindcss",
+		"stylelint.vscode-stylelint"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [

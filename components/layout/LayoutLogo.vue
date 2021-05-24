@@ -1,5 +1,5 @@
 <template>
-  <CodegramLogo />
+  <CodegramLogo class="logo" />
 </template>
 
 <script>
@@ -8,3 +8,10 @@ export default {
   components: { CodegramLogo },
 }
 </script>
+
+<style scoped>
+.logo {
+  width: 4em;
+  height: 4em;
+}
+</style>
