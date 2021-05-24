@@ -1,5 +1,9 @@
 # nuxt-starter
 
+## Variants
+
+* [Default](https://github.com/codegram/nuxt-starter/tree/main)
+* [With Tailwind](https://github.com/codegram/nuxt-starter/tree/variant/tailwind)
 ## Build Setup
 
 ```bash
