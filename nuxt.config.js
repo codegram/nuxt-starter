@@ -39,4 +39,8 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  storybook: {
+    addons: ['@storybook/addon-a11y'],
+  },
 }
