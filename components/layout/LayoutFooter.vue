@@ -93,7 +93,13 @@
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3
-                class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                class="
+                  text-sm
+                  font-semibold
+                  tracking-wider
+                  text-gray-400
+                  uppercase
+                "
               >
                 Solutions
               </h3>
@@ -137,7 +143,13 @@
             </div>
             <div class="mt-12 md:mt-0">
               <h3
-                class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                class="
+                  text-sm
+                  font-semibold
+                  tracking-wider
+                  text-gray-400
+                  uppercase
+                "
               >
                 Support
               </h3>
@@ -183,7 +195,13 @@
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3
-                class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                class="
+                  text-sm
+                  font-semibold
+                  tracking-wider
+                  text-gray-400
+                  uppercase
+                "
               >
                 Company
               </h3>
@@ -236,7 +254,13 @@
             </div>
             <div class="mt-12 md:mt-0">
               <h3
-                class="text-sm font-semibold tracking-wider text-gray-400 uppercase"
+                class="
+                  text-sm
+                  font-semibold
+                  tracking-wider
+                  text-gray-400
+                  uppercase
+                "
               >
                 Legal
               </h3>

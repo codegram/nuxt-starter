@@ -4,11 +4,27 @@
       <div class="mx-auto text-lg max-w-prose">
         <h1>
           <span
-            class="block text-base font-semibold tracking-wide text-center text-indigo-600 uppercase"
+            class="
+              block
+              text-base
+              font-semibold
+              tracking-wide
+              text-center text-indigo-600
+              uppercase
+            "
             >{{ page.title }}</span
           >
           <span
-            class="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl"
+            class="
+              block
+              mt-2
+              text-3xl
+              font-extrabold
+              leading-8
+              tracking-tight
+              text-center text-gray-900
+              sm:text-4xl
+            "
             >{{ page.subtitle }}</span
           >
         </h1>
