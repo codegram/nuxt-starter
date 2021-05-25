@@ -10,8 +10,5 @@
   },
   "tailwindCSS.includeLanguages": {
     "vue-html": "html"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
   }
 }
