@@ -1,11 +1,11 @@
 <template>
   <footer class="bg-white" aria-labelledby="footerHeading">
     <h2 id="footerHeading" class="sr-only">Footer</h2>
-    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+    <div class="mx-auto px-4 py-12 max-w-7xl sm:px-6 lg:px-8 lg:py-16">
+      <div class="xl:grid xl:gap-8 xl:grid-cols-3">
         <div class="space-y-8 xl:col-span-1">
           <LayoutLogo class="h-10 text-gray-300" />
-          <p class="text-base text-gray-500">
+          <p class="text-gray-500 text-base">
             Making the world a better place through constructing elegant
             hierarchies.
           </p>
@@ -89,15 +89,14 @@
             </a>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
+        <div class="grid gap-8 grid-cols-2 mt-12 xl:col-span-2 xl:mt-0">
+          <div class="md:grid md:gap-8 md:grid-cols-2">
             <div>
               <h3
                 class="
-                  text-sm
+                  text-gray-400 text-sm
                   font-semibold
                   tracking-wider
-                  text-gray-400
                   uppercase
                 "
               >
@@ -107,7 +106,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Marketing
                   </a>
@@ -116,7 +115,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Analytics
                   </a>
@@ -125,7 +124,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Commerce
                   </a>
@@ -134,7 +133,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Insights
                   </a>
@@ -144,10 +143,9 @@
             <div class="mt-12 md:mt-0">
               <h3
                 class="
-                  text-sm
+                  text-gray-400 text-sm
                   font-semibold
                   tracking-wider
-                  text-gray-400
                   uppercase
                 "
               >
@@ -157,7 +155,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Pricing
                   </a>
@@ -166,7 +164,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Documentation
                   </a>
@@ -175,7 +173,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Guides
                   </a>
@@ -184,7 +182,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     API Status
                   </a>
@@ -192,14 +190,13 @@
               </ul>
             </div>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div class="md:grid md:gap-8 md:grid-cols-2">
             <div>
               <h3
                 class="
-                  text-sm
+                  text-gray-400 text-sm
                   font-semibold
                   tracking-wider
-                  text-gray-400
                   uppercase
                 "
               >
@@ -209,7 +206,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     About
                   </a>
@@ -218,7 +215,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Blog
                   </a>
@@ -227,7 +224,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Jobs
                   </a>
@@ -236,7 +233,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Press
                   </a>
@@ -245,7 +242,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Partners
                   </a>
@@ -255,10 +252,9 @@
             <div class="mt-12 md:mt-0">
               <h3
                 class="
-                  text-sm
+                  text-gray-400 text-sm
                   font-semibold
                   tracking-wider
-                  text-gray-400
                   uppercase
                 "
               >
@@ -268,7 +264,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Claim
                   </a>
@@ -277,7 +273,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Privacy
                   </a>
@@ -286,7 +282,7 @@
                 <li>
                   <a
                     href="#"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-gray-500 hover:text-gray-900 text-base"
                   >
                     Terms
                   </a>
@@ -296,8 +292,8 @@
           </div>
         </div>
       </div>
-      <div class="pt-8 mt-12 border-t border-gray-200">
-        <p class="text-base text-gray-400 xl:text-center">
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <p class="text-gray-400 text-base xl:text-center">
           &copy; 2020 Codegram Technologies S.L. All rights reserved.
         </p>
       </div>

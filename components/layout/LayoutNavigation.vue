@@ -1,15 +1,15 @@
 <template>
   <nav class="bg-white border-b border-gray-200">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="mx-auto px-4 max-w-7xl sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex">
-          <div class="flex items-center flex-shrink-0">
+          <div class="flex flex-shrink-0 items-center">
             <NuxtLink to="/">
               <LayoutLogo class="block w-auto h-8 text-red-600 lg:hidden" />
               <LayoutLogo class="hidden w-auto h-8 text-red-600 lg:block" />
             </NuxtLink>
           </div>
-          <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+          <div class="hidden sm:flex sm:-my-px sm:ml-6 sm:space-x-8">
             <NuxtLink
               :to="{ name: 'index' }"
               exact
@@ -17,14 +17,14 @@
               class="
                 inline-flex
                 items-center
-                px-1
                 pt-1
-                text-sm
-                font-medium
-                text-gray-900
-                border-b-2 border-transparent
+                px-1
                 hover:text-gray-700
+                text-gray-900 text-sm
+                font-medium
+                border-b-2
                 hover:border-gray-300
+                border-transparent
               "
             >
               Home
@@ -36,30 +36,30 @@
               class="
                 inline-flex
                 items-center
-                px-1
                 pt-1
-                text-sm
-                font-medium
-                text-gray-900
-                border-b-2 border-transparent
+                px-1
                 hover:text-gray-700
+                text-gray-900 text-sm
+                font-medium
+                border-b-2
                 hover:border-gray-300
+                border-transparent
               "
             >
               About
             </NuxtLink>
           </div>
         </div>
-        <div class="hidden sm:ml-6 sm:flex sm:items-center">
+        <div class="hidden sm:flex sm:items-center sm:ml-6">
           <button
             class="
               p-1
               text-gray-400
+              hover:text-gray-500
               bg-white
               rounded-full
-              hover:text-gray-500
               focus:outline-none
-              focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+              focus:ring-red-500 focus:ring-offset-2 focus:ring-2
             "
           >
             <span class="sr-only">View notifications</span>
@@ -94,7 +94,7 @@
                   bg-white
                   rounded-full
                   focus:outline-none
-                  focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+                  focus:ring-red-500 focus:ring-offset-2 focus:ring-2
                 "
                 aria-haspopup="true"
                 @click="menuOpen = !menuOpen"
@@ -121,14 +121,14 @@
               class="
                 absolute
                 right-0
-                w-48
-                py-1
                 mt-2
-                origin-top-right
+                py-1
+                w-48
                 bg-white
                 rounded-md
                 shadow-lg
-                ring-1 ring-black ring-opacity-5
+                origin-top-right
+                ring-black ring-opacity-5 ring-1
               "
               :class="{ 'sm:hidden': !menuOpen, 'sm:block': menuOpen }"
               role="menu"
@@ -137,7 +137,7 @@
             >
               <a
                 href="#"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                class="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100"
                 role="menuitem"
               >
                 Your Profile
@@ -145,7 +145,7 @@
 
               <a
                 href="#"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                class="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100"
                 role="menuitem"
               >
                 Settings
@@ -153,7 +153,7 @@
 
               <a
                 href="#"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                class="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100"
                 role="menuitem"
               >
                 Sign out
@@ -170,12 +170,12 @@
               justify-center
               p-2
               text-gray-400
-              bg-white
-              rounded-md
               hover:text-gray-500
               hover:bg-gray-100
+              bg-white
+              rounded-md
               focus:outline-none
-              focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+              focus:ring-red-500 focus:ring-offset-2 focus:ring-2
             "
             @click="menuOpen = !menuOpen"
           >
@@ -231,26 +231,27 @@
       Open: "block", closed: "hidden"
     -->
     <div
-      class="absolute left-0 right-0 z-50 bg-white shadow-lg sm:hidden"
+      class="absolute z-50 left-0 right-0 bg-white shadow-lg sm:hidden"
       :class="{ hidden: !menuOpen }"
     >
-      <div class="pt-2 pb-3 space-y-1">
+      <div class="pb-3 pt-2 space-y-1">
         <NuxtLink
           :to="{ name: 'index' }"
           exact
           active-class="border-l-4 border-red-500 bg-red-50 hover:border-red-500 hover:bg-red-50"
           class="
             block
-            py-2
             pl-3
             pr-4
+            py-2
+            text-gray-600
+            hover:text-gray-800
             text-base
             font-medium
-            text-gray-600
-            border-l-4 border-transparent
-            hover:text-gray-800
             hover:bg-gray-50
+            border-l-4
             hover:border-gray-300
+            border-transparent
           "
         >
           Home
@@ -262,22 +263,23 @@
           active-class="border-l-4 border-red-500 bg-red-50 hover:border-red-500 hover:bg-red-50"
           class="
             block
-            py-2
             pl-3
             pr-4
+            py-2
+            text-gray-600
+            hover:text-gray-800
             text-base
             font-medium
-            text-gray-600
-            border-l-4 border-transparent
-            hover:text-gray-800
             hover:bg-gray-50
+            border-l-4
             hover:border-gray-300
+            border-transparent
           "
         >
           About
         </NuxtLink>
       </div>
-      <div class="pt-4 pb-3 border-t border-gray-200">
+      <div class="pb-3 pt-4 border-t border-gray-200">
         <div class="flex items-center px-4">
           <div class="flex-shrink-0">
             <img
@@ -287,20 +289,20 @@
             />
           </div>
           <div class="ml-3">
-            <div class="text-base font-medium text-gray-800">Tom Cook</div>
-            <div class="text-sm font-medium text-gray-500">tom@example.com</div>
+            <div class="text-gray-800 text-base font-medium">Tom Cook</div>
+            <div class="text-gray-500 text-sm font-medium">tom@example.com</div>
           </div>
           <button
             class="
               flex-shrink-0
-              p-1
               ml-auto
+              p-1
               text-gray-400
+              hover:text-gray-500
               bg-white
               rounded-full
-              hover:text-gray-500
               focus:outline-none
-              focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+              focus:ring-red-500 focus:ring-offset-2 focus:ring-2
             "
           >
             <span class="sr-only">View notifications</span>
@@ -329,10 +331,10 @@
               block
               px-4
               py-2
-              text-base
-              font-medium
               text-gray-500
               hover:text-gray-800
+              text-base
+              font-medium
               hover:bg-gray-100
             "
           >
@@ -345,10 +347,10 @@
               block
               px-4
               py-2
-              text-base
-              font-medium
               text-gray-500
               hover:text-gray-800
+              text-base
+              font-medium
               hover:bg-gray-100
             "
           >
@@ -361,10 +363,10 @@
               block
               px-4
               py-2
-              text-base
-              font-medium
               text-gray-500
               hover:text-gray-800
+              text-base
+              font-medium
               hover:bg-gray-100
             "
           >

@@ -1,15 +1,14 @@
 <template>
   <div class="py-16">
     <div class="relative px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto text-lg max-w-prose">
+      <div class="mx-auto max-w-prose text-lg">
         <h1>
           <span
             class="
               block
-              text-base
+              text-center text-indigo-600 text-base
               font-semibold
               tracking-wide
-              text-center text-indigo-600
               uppercase
             "
             >{{ page.title }}</span
@@ -18,21 +17,20 @@
             class="
               block
               mt-2
-              text-3xl
+              text-center text-gray-900 text-3xl
               font-extrabold
-              leading-8
               tracking-tight
-              text-center text-gray-900
+              leading-8
               sm:text-4xl
             "
             >{{ page.subtitle }}</span
           >
         </h1>
-        <p class="mt-8 text-xl leading-8 text-gray-500">
+        <p class="mt-8 text-gray-500 text-xl leading-8">
           {{ page.description }}
         </p>
       </div>
-      <div class="mx-auto mt-6 prose prose-lg text-gray-500 prose-indigo">
+      <div class="prose prose-lg prose-indigo mt-6 mx-auto text-gray-500">
         <NuxtContent :document="page" />
       </div>
     </div>
