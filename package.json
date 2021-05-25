@@ -15,6 +15,10 @@
   "dependencies": {
     "nuxt": "^2.14.12"
   },
+  "engines": {
+    "node": ">=15 <16",
+    "npm": ">=7 <8"
+  },
   "devDependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/eslint-config": "^6.0.0",
