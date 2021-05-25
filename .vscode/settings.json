@@ -8,7 +8,4 @@
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
-  "tailwindCSS.includeLanguages": {
-    "vue-html": "html"
-  }
 }
