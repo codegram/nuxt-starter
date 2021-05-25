@@ -7,8 +7,5 @@
   },
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
   }
 }
