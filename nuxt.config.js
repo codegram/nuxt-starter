@@ -29,6 +29,7 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -40,4 +41,8 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  storybook: {
+    addons: ['@storybook/addon-a11y'],
+  },
 }
