@@ -15,7 +15,7 @@
     "storybook:build": "nuxt storybook build"
   },
   "dependencies": {
-    "nuxt": "^2.15.6"
+    "nuxt": "^2.15.7"
   },
   "engines": {
     "node": ">=15 <16",
