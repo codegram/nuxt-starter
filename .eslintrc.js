@@ -5,6 +5,9 @@ module.exports = {
     node: true,
     'cypress/globals': true,
   },
+  globals: {
+    cy: true,
+  },
   parserOptions: {
     parser: 'babel-eslint',
   },
