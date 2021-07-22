@@ -47,3 +47,31 @@ jobs:
 
       - name: Generate ⚙️
         run: npm run generate
+
+      - uses: nanasess/setup-chromedriver@master
+
+      - name: Run E2E Tests 🧪
+        run: |
+          npx serve dist &
+          npm run e2e:ci
+
+      - name: Upload artifacts (screenshots) 📸
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress screenshots
+          path: cypress/screenshots/
+
+      - name: Upload artifacts (videos) 📹
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress videos
+          path: cypress/videos/
+
+      - name: Upload artifacts (downloads) 📥
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress downloads
+          path: cypress/downloads/
