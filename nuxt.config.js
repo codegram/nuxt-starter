@@ -36,7 +36,16 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-svg-loader',
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
