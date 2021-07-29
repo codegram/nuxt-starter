@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       staticDistDir: 'dist',
-      autodiscoverUrlBlocklist: ['/admin/index.html'],
+      autodiscoverUrlBlocklist: ['/admin/index.html', '/200.html'],
     },
     assert: {
       preset: 'lighthouse:no-pwa',
