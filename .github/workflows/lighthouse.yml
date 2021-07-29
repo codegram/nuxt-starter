@@ -1,0 +1,57 @@
+name: Lighthouse
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  check:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [15]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v2.3.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - name: Next cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies 👨🏻‍💻
+        run: npm ci
+
+      - run: npm install && npm install -g @lhci/cli@0.8.x
+
+      - name: Build ⚙️
+        run: npm run generate
+
+      - name: Run Lighthouse Audit 🔦
+        run: lhci autorun
+        env:
+          LHCI_GITHUB_TOKEN: ${{ secrets.LHCI_GITHUB_TOKEN }}
+          PORT: 5000
+
+      - name: Upload artifacts (Lighthouse Report) 📈
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: lighthouse report
+          path: lighthouse-report
