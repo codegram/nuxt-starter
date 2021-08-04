@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "nuxt": "^2.15.7",
-    "nuxt-i18n": "^6.28.0"
+    "nuxt-i18n": "^6.28.1"
   },
   "engines": {
     "node": ">=15 <16",
