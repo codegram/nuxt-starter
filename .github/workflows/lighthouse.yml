@@ -57,7 +57,7 @@ jobs:
 
       - name: Upload artifacts (Lighthouse Report) 📈
         if: ${{ always() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: lighthouse report
           path: lighthouse-report
